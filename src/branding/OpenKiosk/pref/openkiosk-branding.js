@@ -79,6 +79,8 @@ pref("openkiosk.filters.protocol.ftp.enabled", false);
 pref("openkiosk.filters.protocol.res.enabled", false);
 pref("openkiosk.filters.protocol.viewsource.enabled", false);
 pref("openkiosk.filters.protocol.javascript.enabled", false);
+pref("openkiosk.filters.protocol.blob.enabled", false);
+
 
 // session
 pref("openkiosk.session.inactiveTerminal.enabled", true);

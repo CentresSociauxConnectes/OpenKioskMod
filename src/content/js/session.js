@@ -575,6 +575,7 @@ var OpenKioskSession =
     let javascript = Services.prefs.getBoolPref("openkiosk.filters.protocol.javascript.enabled");
     let res = Services.prefs.getBoolPref("openkiosk.filters.protocol.res.enabled");
     let viewsource = Services.prefs.getBoolPref("openkiosk.filters.protocol.viewsource.enabled");
+    let blob = Services.prefs.getBoolPref("openkiosk.filters.protocol.blob.enabled");
 
     if (about) this.protocolString.push("about");
     if (data) this.protocolString.push("data");
@@ -584,6 +585,7 @@ var OpenKioskSession =
     if (javascript) this.protocolString.push("javascript");
     if (res) this.protocolString.push("resource");
     if (viewsource) this.protocolString.push("viewsource");
+    if (blob) this.protocolString.push("blob");
 
     this.protocolString = this.protocolString.join("|");
 
